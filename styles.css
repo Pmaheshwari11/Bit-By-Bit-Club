@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 25% 60%;
+  column-gap: 10%;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #000000;
+  background-color: #ff9d2d;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar_brand {
+  width: 200px;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav_link_button {
+  border: none;
+  border-radius: 25px;
+  height: 40px;
+  width: 100px;
+  background-color: #191919;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#Home {
+  border-bottom: 1px solid #000000;
+  background-color: #ff9d2d;
+  padding: 70px 0 40px 120px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hc_title {
+  font-size: 90px;
+  font-family: "Noto Serif JP";
+  margin-bottom: 10px;
+}
+
+.hc_para {
+  font-size: 25px;
+  font-family: "Raleway";
+  width: 70%;
+}
+
+.hc_button {
+  border: none;
+  border-radius: 25px;
+  height: 40px;
+  width: 200px;
+  background-color: #191919;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#Trending {
+  padding: 0 100px;
+}
+
+.trending_icon {
+  width: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.trending_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  font-family: "Noto Sans Tai Viet";
+}
+
+.ti_author {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.ti_userimage {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.ti_heading {
+  font-family: "Noto Sans Tai Viet";
+  font-size: 20px;
+  margin: 0px auto;
+}
+
+.ti_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  color: #6b6b6b;
+  font-size: 14px;
+  font-family: "Nato Sans Tai Viet";
+  font-weight: 200;
+  margin-top: 0px;
+}
+
+#Posts {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  padding: 0 100px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 30px;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.userimage {
+  width: 20px;
+}
+
+.username {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  gap: 10px;
+  font-family: "Raleway";
+}
+
+.title {
+  font-size: 22px;
+  font-family: "Lato";
+}
+
+.description {
+  font-size: 17px;
+  color: #6b6b6b;
+  font-family: "Noto Serif JP";
+}
+
+.post_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b6b6b;
+  font-size: 14px;
+  font-family: "Nato Sans Tai Viet";
+  font-weight: 200;
+}
+
+.bookmark {
+  width: 20px;
+}
+
+.bookmark:hover {
+  cursor: pointer;
+}
+
+.content_img {
+  width: 200px;
+}
+
+.sidebar {
+  font-family: "Raleway";
+  position: sticky;
+  right: 0;
+  top: 100px;
+}
+
+.sidebar_button {
+  border: none;
+  border-radius: 25px;
+  height: 30px;
+  width: auto;
+  margin: 0 10px 10px 10px;
+}
+
+.sidebar_extra {
+  border-top: 0.1px solid #f2f2f2;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.sidebar_link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #707070;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  nav {
+    display: grid;
+    grid-template-columns: 20% 40%;
+    column-gap: 0;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 20px 0 20px 40px;
+    border-bottom: 1px solid #000000;
+    background-color: #ff9d2d;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+  }
+
+  .navbar_brand {
+    width: 150px;
+  }
+
+  .navbar_links {
+    display: block;
+  }
+
+  .nav_link {
+    display: none;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .nav_link_button {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    background-color: #191919;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  #Home {
+    border-bottom: 1px solid #000000;
+    background-color: #ff9d2d;
+    padding: 70px 0 40px 30px;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hc_title {
+    font-size: 60px;
+    font-family: "Noto Serif JP";
+    margin-bottom: 25px;
+    margin-top: 70px;
+  }
+
+  .hc_para {
+    font-size: 25px;
+    font-family: "Raleway";
+    width: 90%;
+    margin-bottom: 45px;
+  }
+
+  .home_gif {
+    display: none;
+  }
+
+  .hc_button {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 200px;
+    background-color: #191919;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  #Trending {
+    padding: 0 20px;
+  }
+
+  .trending_icon {
+    width: 30px;
+    position: relative;
+    top: 5px;
+  }
+
+  .trending_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    font-family: "Noto Sans Tai Viet";
+  }
+
+  .ti_author {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .ti_userimage {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .ti_heading {
+    font-family: "Noto Sans Tai Viet";
+    font-size: 16px;
+    margin: 0px auto;
+  }
+
+  .ti_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    color: #6b6b6b;
+    font-size: 14px;
+    font-family: "Nato Sans Tai Viet";
+    font-weight: 200;
+    margin-top: 0px;
+  }
+
+  #Posts {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0 15px;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 30px;
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .userimage {
+    width: 20px;
+  }
+
+  .username {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    gap: 10px;
+    font-family: "Raleway";
+  }
+
+  .title {
+    font-size: 18px;
+    font-family: "Lato";
+  }
+
+  .description {
+    font-size: 17px;
+    color: #6b6b6b;
+    font-family: "Noto Serif JP";
+    display: none;
+  }
+
+  .post_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b6b6b;
+    font-size: 14px;
+    font-family: "Nato Sans Tai Viet";
+    font-weight: 200;
+  }
+
+  .bookmark {
+    width: 20px;
+  }
+
+  .bookmark:hover {
+    cursor: pointer;
+  }
+
+  .content_img {
+    width: 100px;
+  }
+
+  .sidebar {
+    font-family: "Raleway";
+  }
+
+  .sidebar_button {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: auto;
+    margin: 0 3px 7px;
+  }
+
+  .sidebar_extra {
+    border-top: 0.1px solid #f2f2f2;
+    margin: 20px 0;
+    padding: 20px 0;
+  }
+
+  .sidebar_link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #707070;
+    font-family: "Lato";
+    font-weight: 400;
+    display: none;
+  }
+}
